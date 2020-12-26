@@ -47,3 +47,17 @@ module.exports = {
     ...
 }
 ```
+
+#### `OR`: Use `cross-env` (cross-platform solution)
+```
+{
+  "scripts": {
+     "build:prod": "cross-env NODE_ENV=production ng build --prod"
+     ...
+  },
+  "devDependencies": {
+    ...
+    "cross-env": "^7.0.3",
+  }
+}
+```
